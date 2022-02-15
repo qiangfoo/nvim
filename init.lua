@@ -5,6 +5,7 @@ vim.opt.shiftwidth = 4
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.mouse = 'a'
+vim.opt.confirm = true
 
 require('nightfox').load("nightfox")
 
