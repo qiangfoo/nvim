@@ -6,17 +6,20 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.mouse = 'a'
 vim.opt.confirm = true
+vim.opt.ignorecase = true
+vim.opt.incsearch = true
+vim.opt.autoindent = true
 
 require('nightfox').load("nightfox")
 
 require('nvim-tree').setup {
-    view = {
-        width = 30,
-        auto_resize = true,
-        side = 'right'
-    }
+  view = {
+    width = 30,
+    auto_resize = true,
+    side = 'right'
+  }
 }
-require('lualine').setup{}
+require('lualine').setup {}
 
 local cmp = require('cmp')
 cmp.setup{
